@@ -8,7 +8,7 @@ rm -r ../rss 2>/dev/null || true
 rm -r ../theme 2>/dev/null || true
 
 pelican --relative-urls --ignore-cache \
-  --theme-path template/blue-penguin \
-  -o .. content
+  --theme-path ./foukBlog/template/blue-penguin \
+  -o .. ./foukBlog/content
 
 git add ../*.html
